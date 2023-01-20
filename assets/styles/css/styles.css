@@ -351,6 +351,12 @@ template {
   margin-top: 1em;
 }
 
+:root {
+  --dark-bg-color: #1F2937;
+  --font-color: #F9FAF8;
+  --hero-font: 48px bolder;
+}
+
 .nav {
   display: flex;
   flex-direction: column;
@@ -368,6 +374,20 @@ template {
   font-size: 18px;
   text-decoration: none;
 }
+@media (min-width: 426px) {
+  .nav {
+    flex-direction: row;
+  }
+  .nav__logo {
+    margin-right: auto;
+  }
+}
+
+:root {
+  --dark-bg-color: #1F2937;
+  --font-color: #F9FAF8;
+  --hero-font: 48px bolder;
+}
 
 .cards {
   padding: 1em;
@@ -377,6 +397,15 @@ template {
   font-size: 36px;
   font-weight: bolder;
   text-align: center;
+}
+@media (min-width: 426px) {
+  .cards {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .cards__title {
+    grid-column: 1/span 2;
+  }
 }
 
 .card {
@@ -399,6 +428,9 @@ template {
   background-color: #E5E7EB;
   padding: 1em;
   color: #1F2937;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .quote__text {
   font-size: 36px;
@@ -407,6 +439,13 @@ template {
 .quote__author {
   font-size: 24px;
   font-weight: bolder;
+  margin-left: auto;
+}
+
+:root {
+  --dark-bg-color: #1F2937;
+  --font-color: #F9FAF8;
+  --hero-font: 48px bolder;
 }
 
 .cta {
@@ -430,6 +469,14 @@ template {
 .cta__em-text {
   color: #FAF9F8;
   font-weight: bolder;
+}
+@media (min-width: 426px) {
+  .cta__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+  }
 }
 
 .footer {

@@ -1,3 +1,6 @@
+@import 'mixin';
+@import 'variables';
+
 .nav {
     display: flex;
     flex-direction: column;
@@ -15,5 +18,13 @@
         color: #E5E7EB;
         font-size: 18px;
         text-decoration: none;
+    }
+
+    @include media-query($tablet){
+        flex-direction: row;
+        
+        &__logo {
+            margin-right: auto;
+        }
     }
 }

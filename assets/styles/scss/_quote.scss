@@ -2,6 +2,9 @@
     background-color: #E5E7EB;
     padding: 1em;
     color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &__text {
         font-size: 36px;
@@ -10,5 +13,6 @@
     &__author {
         font-size: 24px;
         font-weight: bolder;
+        margin-left: auto;
     }
 }

@@ -1,3 +1,6 @@
+@import 'mixin';
+@import 'variables';
+
 .cards {
     padding: 1em;
 
@@ -7,4 +10,14 @@
         font-weight: bolder;
         text-align: center;
     }
+
+    @include media-query($tablet){
+        display: grid;
+        grid-template-columns: auto auto;
+
+        &__title {
+            grid-column: 1 / span 2;
+        }
+    }
+
 }
