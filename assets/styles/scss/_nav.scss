@@ -1,0 +1,19 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5em;
+
+    &__logo {
+        color: #F9FAF8;
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+
+    &__link {
+        color: #E5E7EB;
+        font-size: 18px;
+        text-decoration: none;
+    }
+}

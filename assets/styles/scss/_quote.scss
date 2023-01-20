@@ -1,0 +1,14 @@
+.quote {
+    background-color: #E5E7EB;
+    padding: 1em;
+    color: #1F2937;
+
+    &__text {
+        font-size: 36px;
+        font-style: italic;
+    }
+    &__author {
+        font-size: 24px;
+        font-weight: bolder;
+    }
+}

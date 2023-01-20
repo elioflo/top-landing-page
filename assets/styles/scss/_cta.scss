@@ -1,0 +1,25 @@
+.cta {
+    padding: 1em;
+    color: #E5E7EB;
+
+    &__content {
+        background-color: #3882F6;
+        padding: .5em 1em;
+        padding-bottom: 1.5em;
+        border-radius: .3em;
+    }
+
+    &__button {
+        color: #FAF9F8;
+        border: 2px solid #FAF9F8;
+        font-weight: bold;
+        padding: .4em 1.5em;
+        text-decoration: none;
+        border-radius: .3em;
+    }
+
+    &__em-text {
+        color: #FAF9F8;
+        font-weight: bolder;
+    }
+}

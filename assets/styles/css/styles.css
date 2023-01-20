@@ -309,10 +309,138 @@ template {
   display: none;
 }
 
+:root {
+  --dark-bg-color: #1F2937;
+  --font-color: #F9FAF8;
+  --hero-font: 48px bolder;
+}
+
 .container {
   min-height: 100vh;
+  font-family: sans-serif;
+}
+
+.header {
+  background-color: var(--dark-bg-color);
+  padding: 1em;
+}
+.header__title {
+  color: #FAF9F8;
+  font-size: 48px;
+  font-weight: bolder;
+  text-align: center;
+}
+.header__text {
+  font-size: 18px;
+  color: #E5E7EB;
+}
+.header__button {
+  background-color: #3882F6;
+  color: #FAF9F8;
+  font-weight: bold;
+  padding: 0.4em 1.5em;
+  text-decoration: none;
+  border-radius: 0.3em;
+}
+.header__img {
+  background-color: grey;
+  height: max(250px, 35vw);
+  color: #E5E7EB;
   display: grid;
   place-content: center;
+  margin-top: 1em;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+.nav__logo {
+  color: #F9FAF8;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.nav__link {
+  color: #E5E7EB;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.cards {
+  padding: 1em;
+}
+.cards__title {
+  color: #1F2937;
+  font-size: 36px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.card {
+  width: 150px;
+  margin: 1em auto;
+}
+.card__img {
+  border: 2px solid #3882F6;
+  width: 100%;
+  height: 150px;
+  border-radius: 0.5em;
+}
+.card__caption {
+  color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+.quote {
+  background-color: #E5E7EB;
+  padding: 1em;
+  color: #1F2937;
+}
+.quote__text {
+  font-size: 36px;
+  font-style: italic;
+}
+.quote__author {
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.cta {
+  padding: 1em;
+  color: #E5E7EB;
+}
+.cta__content {
+  background-color: #3882F6;
+  padding: 0.5em 1em;
+  padding-bottom: 1.5em;
+  border-radius: 0.3em;
+}
+.cta__button {
+  color: #FAF9F8;
+  border: 2px solid #FAF9F8;
+  font-weight: bold;
+  padding: 0.4em 1.5em;
+  text-decoration: none;
+  border-radius: 0.3em;
+}
+.cta__em-text {
+  color: #FAF9F8;
+  font-weight: bolder;
+}
+
+.footer {
+  background-color: var(--dark-bg-color);
+}
+.footer__text {
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+  color: #E5E7EB;
+  padding: 1.5em 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
