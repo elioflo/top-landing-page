@@ -5,7 +5,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: .5em;
+    max-width: $max-w;
+    margin: auto;
+    gap: 1em;
 
     &__logo {
         color: #F9FAF8;
@@ -22,7 +24,7 @@
 
     @include media-query($tablet){
         flex-direction: row;
-        
+
         &__logo {
             margin-right: auto;
         }

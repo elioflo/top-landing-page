@@ -4,6 +4,11 @@
 .cards {
     padding: 1em;
 
+    &__content {
+        max-width: $max-w;
+        margin: auto;
+    }
+
     &__title {
         color: #1F2937;
         font-size: 36px;
@@ -12,11 +17,26 @@
     }
 
     @include media-query($tablet){
-        display: grid;
-        grid-template-columns: auto auto;
+        &__content{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
 
         &__title {
             grid-column: 1 / span 2;
+        }
+    }
+    
+    @include media-query($laptop){
+        min-height: $max-h;
+
+        &__content{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__title {
+            width: 100%;
         }
     }
 

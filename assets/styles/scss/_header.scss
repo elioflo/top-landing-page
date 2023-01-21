@@ -1,12 +1,25 @@
+@import 'variables';
+@import 'mixin';
+
 .header {
     background-color: var(--dark-bg-color);
     padding: 1em;
+
+    &__content {
+        max-width: $max-w;
+        margin: auto;
+    }
 
     &__title {
         color: #FAF9F8;
         font-size: 48px;
         font-weight: bolder;
         text-align: center;
+    }
+
+    &__hero {
+        display: flex;
+        flex-direction: column;
     }
     
     &__text {
@@ -21,14 +34,41 @@
         padding: .4em 1.5em;
         text-decoration: none;
         border-radius: .3em;
-        
+        margin: auto;
     }
+
     &__img {
         background-color: grey;
         height: max(250px, 35vw);
+        max-height: 300px;
         color: #E5E7EB;
         display: grid;
         place-content: center;
         margin-top: 1em;
     }
+
+    @include media-query($laptop){
+        padding-top: 2em;
+
+        &__content {
+            display: flex;
+            margin: 5em auto;
+            gap: 2em;
+        }
+
+        &__hero {
+            width: 50%;
+            display: block;
+        }
+
+        &__title {
+            text-align: left;
+        }
+
+        &__img {
+            width: 50%;
+        }
+    }
+
+
 }
